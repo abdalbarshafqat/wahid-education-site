@@ -88,12 +88,15 @@ input,select,textarea{box-sizing:border-box;width:100%}
         </div>
         <div style="display: flex; flex-direction: column; gap: 6px;">
           <label for="contact-role" style="font-weight: 800; font-size: 14px;">I am a…</label>
-          <select id="contact-role" name="role" style="min-height: 50px; padding: 0 16px; border-radius: 14px; border: 2px solid #14285A; background: #FFFFFF; font-family: inherit; font-size: 16px; color: #14285A;">
-            <option>Parent or guardian</option>
-            <option>Student</option>
-            <option>Community center or masjid</option>
-            <option>Something else</option>
-          </select>
+          <div style="position: relative;">
+            <select id="contact-role" name="role" style="width: 100%; min-height: 50px; padding: 0 48px 0 16px; border-radius: 14px; border: 2px solid #14285A; background: #FFFFFF; font-family: inherit; font-size: 16px; color: #14285A; appearance: none; -webkit-appearance: none; box-sizing: border-box; cursor: pointer;">
+              <option>Parent or guardian</option>
+              <option>Student</option>
+              <option>Community center or masjid</option>
+              <option>Something else</option>
+            </select>
+            <svg aria-hidden="true" style="position: absolute; right: 16px; top: 50%; transform: translateY(-50%); pointer-events: none;" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#14285A" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"></path></svg>
+          </div>
         </div>
         <div style="display: flex; flex-direction: column; gap: 6px;">
           <label for="contact-message" style="font-weight: 800; font-size: 14px;">How can we help?</label>
