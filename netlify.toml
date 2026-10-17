@@ -1,0 +1,5 @@
+# Netlify settings for the Wahid Education site.
+# Plain static HTML: nothing to build, publish the repository root.
+[build]
+  publish = "."
+  command = ""
